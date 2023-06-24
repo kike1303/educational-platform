@@ -100,7 +100,7 @@ Este dominio se centra en la recopilación, almacenamiento y análisis de datos 
 
 - **Servicio de Gestión de Cursos**. Esto permitirá que la plataforma funcione como una solución educativa, que es el core de todo.
 
-- **Servicio de Notificaciones**. Esto permitirá mantener a los usuarios informados, garantizar transparencia en la compra de los cursos. Crear campañas de marketing de manera eficiente para hacer despegar el negocio, etc.
+- **Servicio de Notificaciones**. Esto permitirá mantener a los usuarios informados, garantizar transparencia en la compra de los cursos, crear campañas de marketing de manera eficiente para hacer despegar el negocio, etc.
 
 ## Estándares de Microservicios y Elecciones Tecnológicas
 
