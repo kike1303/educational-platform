@@ -98,7 +98,7 @@ Este dominio se centra en la recopilación, almacenamiento y análisis de datos 
 
 - **Servicio de Autenticación y Autorización**. Es fundamental garantizar que los usuarios puedan acceder de manera segura a la plataforma. Además, como es la base de la interacción del usuario, es crucial tener esto en su lugar.
 
-- **Servicio de Gestión de Cursos**. Esto permitirá que la plataforma funcione como una solución educativa, que el core de todo.
+- **Servicio de Gestión de Cursos**. Esto permitirá que la plataforma funcione como una solución educativa, que es el core de todo.
 
 - **Servicio de Notificaciones**. Esto permitirá mantener a los usuarios informados, garantizar transparencia en la compra de los cursos. Crear campañas de marketing de manera eficiente para hacer despegar el negocio, etc.
 
