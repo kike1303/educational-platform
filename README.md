@@ -2,7 +2,6 @@
 
 La plataforma educativa actual se basa en un monolito de backend desarrollado en Python, que interactúa con un frontend React, una base de datos, un Data Warehouse, un proveedor de notificaciones y un proveedor de tracking. Con el crecimiento esperado de la plataforma, es esencial escalar la arquitectura para mantener el rendimiento, la mantenibilidad del código y la experiencia del usuario.
 
-
 ## Desglose del problema
 
 Para lograr la escalabilidad, performance y mantenibilidad deseada, es necesario desacoplar el monolito en microservicios que permitan desarrollar, probar, desplegar y escalar componentes de manera independiente. Esto implica:
@@ -17,10 +16,10 @@ Para lograr la escalabilidad, performance y mantenibilidad deseada, es necesario
 
 - **Monitoreo y Mantenimiento**: Implementar herramientas y prácticas que permitan monitorear la salud de los servicios y facilitar su mantenimiento.
 
-
 ## Dominios y sus responsabilidades
 
 ### Autenticación y Autorización:
+
 Manejo de diferentes tipos de autenticación y autorización para los usuarios.
 
 Este dominio es crítico ya que controla el acceso a la plataforma y define qué acciones pueden realizar los usuarios.
@@ -34,7 +33,6 @@ Este dominio es crítico ya que controla el acceso a la plataforma y define qué
 1. **Validación de Tokens**: Validar tokens de acceso para asegurar que las solicitudes a la API estén autorizadas.
 
 1. **Revocación de Acceso**: Proveer mecanismos para revocar el acceso cuando sea necesario, por ejemplo, en caso de comportamiento sospechoso.
-
 
 ### Gestión de Cursos:
 
@@ -52,7 +50,6 @@ Este dominio es el núcleo de la plataforma educativa y abarca la creación y ge
 
 1. **Proveer APIs para Frontend**: Exponer APIs para que el frontend de React pueda consumir y mostrar la información relacionada con los cursos.
 
-
 ### Notificaciones:
 
 Enviar emails transaccionales y notificaciones de marketing.
@@ -66,7 +63,6 @@ Este dominio es responsable de mantener a los usuarios informados sobre eventos 
 1. **Integración con Proveedores de Marketing**: Integrarse con servicios externos para enviar campañas de marketing.
 
 1. **Gestión de Preferencias de Notificación**: Permitir a los usuarios gestionar sus preferencias de notificación.
-
 
 ### Tracking de Comportamiento de Usuarios:
 
@@ -118,7 +114,7 @@ Este dominio se centra en la recopilación, almacenamiento y análisis de datos 
 
 - **Monitoreo y Logging**: Integrar soluciones de monitoreo y registro como DataDog.
 
-***
+---
 
 Es importante destacar que en el proceso de desglose, es necesario garantizar que la separación en microservicios no afecte la consistencia de los datos ni la experiencia del usuario. Esto se puede lograr a través de patrones de microservicios como API Gateway o Event Sourcing.
 
@@ -126,13 +122,13 @@ Además, en la transición hacia microservicios, es fundamental garantizar la ca
 
 En conjunto, estos cinco dominios y sus microservicios asociados forman una arquitectura más modular y escalable en comparación con el monolito original. Al separar responsabilidades en microservicios específicos, se facilita el mantenimiento, se mejora la capacidad de escalar de forma independiente y se acelera el tiempo de entrega de nuevas características. Además, esto permite que los equipos de desarrollo trabajen en paralelo en diferentes dominios sin interferir entre sí, lo que aumenta la eficiencia general del proceso de desarrollo.
 
-***
+---
 
-### Diagrama de Plataforma Educacional
+### Diagrama de Plataforma Educativa
 
+![Diagrama de Plataforma Educativa](diagram.png)
 
-
-***
+---
 
 ## API de Servicio de Gestión de Cursos
 
@@ -262,4 +258,3 @@ components:
 
 
 ```
-
